@@ -66,6 +66,13 @@ let pppData = [
         value: mean2022.reduce((r, c) => r + parseFloat(c.OBS_VALUE), 0) / mean2022.length
     },
 ];
+pppData = [];
+ppp.filter(d => {return d.geo === "IT"}).forEach(d => {
+    pppData.push({
+        key: d.TIME_PERIOD,
+        value: d.OBS_VALUE
+    })
+});
 
 let povertyData = poverty.filter(d => {return d.geo === 'EU27_2020'});
 
