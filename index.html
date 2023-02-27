@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lioninside | Data Visualisation</title>
+
+    <!-- Font and Bootstrap -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">
+    <style>
+        circle {
+            stroke-width: 1px;
+            stroke: black;
+            opacity: .8
+        }
+
+        circle:hover {
+            stroke: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<main role="main">
+
+    <!-- Introduction to the team and task
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing">
+
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Inflation rate and labour productivity</h2>
+            </div>
+        </div>
+        <hr>
+        <div id="labourProductivity"></div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">unemployment rate</h2>
+            </div>
+        </div>
+        <hr>
+        <div id="chart"></div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Number of people at the risk of poverety</h2>
+            </div>
+        </div>
+        <hr>
+        <div id="poverty"></div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Purchasing power parity</h2>
+            </div>
+        </div>
+        <hr>
+        <div id="ppp"></div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">The map of Europe</h2>
+            </div>
+        </div>
+        <hr>
+        <div id="map"></div>
+
+
+    </div><!-- /.container -->
+</main>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!--  charts js files goes here  -->
+<script src="index.js" type="module"></script>
+
+<!-- Scripts -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+    d3version4 = d3
+    window.d3 = null
+</script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+    d3version7 = d3
+    window.d3 = null
+    // test it worked
+    console.log('v4', d3version4.version)
+    console.log('v7', d3version7.version)
+</script>
+<script src="script.js" async></script>
+<script src="script2.js" async></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
+<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+</body>
+
+</html>
+
