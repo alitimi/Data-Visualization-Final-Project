@@ -1,11 +1,11 @@
 import * as Chart from "./lib/charts.js";
 
 // load the data here
-const map = (await d3version7.json("./data/geojson/europe.geojson"));
-const ppp = await d3version7.csv("./data/ppp.csv");
-const labour = await d3version7.csv("./data/labour_productivity.csv");
-const inflation = await d3version7.csv("./data/inflation.csv");
-const poverty = await d3version7.csv("./data/poverty_risk.csv");
+const map = (await d3version7.json("data/geojson/europe.geojson"));
+const ppp = await d3version7.csv("data/ppp.csv");
+const labour = await d3version7.csv("data/labour_productivity.csv");
+const inflation = await d3version7.csv("data/inflation.csv");
+const poverty = await d3version7.csv("data/poverty_risk.csv");
 
 
 // data preparation logics goes here
