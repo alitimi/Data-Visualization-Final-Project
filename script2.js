@@ -1,5 +1,5 @@
 function fetchData(check = true, value = "European Union") {
-    document.getElementsByTagName('svg')?.item(0)?.remove();
+    // document.getElementsByTagName('svg')?.item(0)?.remove();
     var parse = d3version4.timeParse('%Y-%m-%d');
     d3version4.csv('data/owid-covid-data.csv', (casesData) => {
         casesData = filterByDate(casesData);
@@ -238,7 +238,7 @@ function init() {
     chartContainer = null;
     svg1 = null;
     marginContainer = null;
-    chartContainer = d3version4.select('.chart-container');
+    chartContainer = d3version4.select('#chart-container');
     svg1 = chartContainer.append('svg');
     marginContainer = svg1.append('g');
 }
@@ -373,7 +373,7 @@ function render(first, second) {
 
 
 function getDimensions() {
-    var containerWidth = parseInt(d3version4.select('.chart-container').style('width'));
+    var containerWidth = parseInt(d3version4.select('#chart-container').style('width'));
     margin.top = 20;
     margin.right = 30;
     margin.left = 40;
