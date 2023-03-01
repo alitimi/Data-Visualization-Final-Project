@@ -12,7 +12,7 @@ const legendTextOffset = 20;
 const svg = d3version4.select("#chart")
     .append("svg")
     .attr("width", 1500)
-    .attr("height", 800)
+    .attr("height", 700)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
