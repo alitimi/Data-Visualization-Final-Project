@@ -136,6 +136,11 @@ const choroplethChartSVG = await Chart.Choropleth(mapData, {
 })
 
 document.getElementById("map").appendChild(choroplethChartSVG);
+
+const legend = await Chart.Legend(d3version7.scaleSequential([0, 0.1], d3version7.interpolateReds), {
+    title: "ppp drop rate amount"
+});
+document.getElementById("mapLegend").appendChild(legend);
 //
 // const legendSVG = d3.create("svg")
 //     .scaleThreshold()
